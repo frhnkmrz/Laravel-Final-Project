@@ -20,7 +20,7 @@ class DashboardController extends Controller
         $grants = Grant::where('project_leader_id', $user->id)->get();
         return view('dashboard.leader', compact('grants'));
     }
-
+    
     public function staff()
     {
         $user = Auth::user();

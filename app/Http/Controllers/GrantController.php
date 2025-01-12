@@ -72,7 +72,7 @@ class GrantController extends Controller
 
     public function update(Request $request, Grant $grant): RedirectResponse
     {
-
+        
         $request->validate([
             'project_leader_id' => 'required|exists:academicians,id',
             'grant_amount' => 'required|string|max:255',

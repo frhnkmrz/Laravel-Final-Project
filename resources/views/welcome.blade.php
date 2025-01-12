@@ -19,7 +19,7 @@
         <!-- Check user role -->
         <?php
         use Illuminate\Support\Facades\Auth;
-            $role = Auth::user()->role ?? 'staff';
+            $role = Auth::user()->role ?? 'guest';
         ?>
 
         <!-- Admin Links -->
